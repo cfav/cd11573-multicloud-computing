@@ -5,7 +5,7 @@ data "azurerm_resource_group" "example" {
 ##### Your code starts here #####
 
 resource "azurerm_storage_account" "example" {
-  name                     = "tscottoudacitystorage"
+  name                     = "chrisfudacitystorage"
   resource_group_name      = data.azurerm_resource_group.example.name
   location                 = data.azurerm_resource_group.example.location
   account_tier             = "Standard"
@@ -21,7 +21,7 @@ resource "azurerm_service_plan" "example" {
 }
 
 resource "azurerm_windows_function_app" "example" {
-  name                = "tscotto-udacity-windows-function-app"
+  name                = "chrisf-udacity-windows-function-app"
   resource_group_name = data.azurerm_resource_group.example.name
   location            = data.azurerm_resource_group.example.location
 
